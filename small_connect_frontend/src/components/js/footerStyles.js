@@ -55,7 +55,7 @@ text-decoration: none;
 
 export const Heading = styled.p`
 font-size: 24px;
-color: #3366FF;
+color: dodgerblue;
 margin-bottom: 40px;
 font-weight: bold;
 `;
