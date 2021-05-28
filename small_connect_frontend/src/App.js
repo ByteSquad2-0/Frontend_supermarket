@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css';
+import Footer from './components/js/footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="main" >
         {/* your code put here */}
       </div>
+      <Footer />
     </React.Fragment>
   );
 }
