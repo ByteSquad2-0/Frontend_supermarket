@@ -4,11 +4,11 @@ import './Navbar.css';
 function Navbar() {
   return (
       <header>
-        <a href = "/" className="logo">Connect</a>
+        <a href = "/" className="logo">sConnect</a>
         <span className="right" >
           <input type="text" name="search" className="search-box"></input>
           <a href="/cart" className="cart">Cart</a>
-          <button className="btn">Sign In</button>
+          <a href="/Login"><button className="btn">Sign In</button></a>
         </span>
       </header>
   );
