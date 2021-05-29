@@ -2,12 +2,13 @@ import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/js/footer';
-
+import {Route, Switch} from 'react-router-dom'
 import Card from './components/card';
 import Login from './components/login';
 import Register from './components/register';
 import Homecarddata from './Homecarddata';
 import Hcards from './components/js/Hcards';
+import Cart from './components/js/Cart';
 
 function App() {
   return (
@@ -17,9 +18,15 @@ function App() {
       <Footer /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      <Navbar />
 
-      {Homecarddata.map(Hcards)}
+      <Navbar />
+      <Switch>
+        <Route exact path = '/' component = {Hcards} >{Homecarddata.map(Hcards)}</Route>}
+        <Route exact path = '/Cart' component = {Cart}/>
+    
+      </Switch>
+
+       
 
       <Footer />
     </React.Fragment>

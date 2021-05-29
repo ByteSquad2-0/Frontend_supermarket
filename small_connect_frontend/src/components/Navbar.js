@@ -4,10 +4,10 @@ import './Navbar.css';
 function Navbar() {
   return (
       <header>
-        <span className="logo">Connect</span>
+        <a href = "/" className="logo">Connect</a>
         <span className="right" >
           <input type="text" name="search" className="search-box"></input>
-          <a href="/" className="cart">Cart</a>
+          <a href="/cart" className="cart">Cart</a>
           <button className="btn">Sign In</button>
         </span>
       </header>
