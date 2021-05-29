@@ -8,7 +8,7 @@ function Navbar() {
         <span className="right" >
           <input type="text" name="search" className="search-box"></input>
           <a href="/cart" className="cart">Cart</a>
-          <a href="/Login"><button className="btn">Sign In</button></a>
+          <a href="/login"><button className="btn">Sign In</button></a>
         </span>
       </header>
   );
