@@ -27,7 +27,7 @@ class Login extends React.Component {
                     <form action="#" method="POST" onSubmit={(e) => this.handleSubmit(e)} >
                         <input type="text" className="inp" placeholder="Username" ref={this.usernameRef} />
                         <input type="password" className="inp" placeholder="Password" ref={this.passwordRef} />
-                        <a className="forgot" href="">Forgot password?</a>
+                        <a className="forgot" href="/">Forgot password?</a>
                         <button className="login-btn" type="submit">Login</button>
                     </form>
                 </div>
