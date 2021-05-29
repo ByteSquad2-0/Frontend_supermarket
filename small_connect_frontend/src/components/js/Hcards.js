@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "./card";
+import Cards from "./../card";
 
 const Hcards = (val) =>{
 return(
