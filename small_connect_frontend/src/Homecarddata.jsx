@@ -1,18 +1,18 @@
 const Homecarddata = [
     {
-        sname: "Mangaldeep General store",
+        sname: "General",
         img : "https://www.bearvalley.com/uploads/2017/07/GeneralStore_produce_summer18_banner-1920x1080.jpg",
         ratings : "5"
 
     },
     {
-        sname : "Mangaldeep General store",
+        sname : "Electronics",
         img : "https://www.bearvalley.com/uploads/2017/07/GeneralStore_produce_summer18_banner-1920x1080.jpg",
         ratings : "3"
 
     },
     {
-        sname : "Mangaldeep General store",
+        sname : "Grocery",
         img : "https://www.bearvalley.com/uploads/2017/07/GeneralStore_produce_summer18_banner-1920x1080.jpg",
         ratings : "2"
 
