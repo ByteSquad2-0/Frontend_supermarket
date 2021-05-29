@@ -1,11 +1,12 @@
 import React from 'react';
 import './login.css';
 
-class Login extends React.Component {
+class Register extends React.Component {
     constructor(props) {
         super(props);
         this.usernameRef = React.createRef();
         this.passwordRef = React.createRef();
+        this.cpasswordRef = React.createRef();
         this.state = {
             err: false
         }
@@ -23,12 +24,13 @@ class Login extends React.Component {
                 </div>
                 {this.state.err?"":<span className="error">Username or Password are invalid!</span>}
                 <div className="signin-box">
-                    <span className="signin-title">Login</span>
+                    <span className="signin-title">Sign Up</span>
                     <form action="#" method="POST" onSubmit={(e) => this.handleSubmit(e)} >
                         <input type="text" className="inp" placeholder="Username" ref={this.usernameRef} />
                         <input type="password" className="inp" placeholder="Password" ref={this.passwordRef} />
-                        <a className="forgot" href="">Forgot password?</a>
-                        <button className="login-btn" type="submit">Login</button>
+                        <input type="password" className="inp" placeholder="Confirm Password" ref={this.cpasswordRef} />
+                        <a className="forgot" href="">Aleardy user? signin here</a>
+                        <button className="login-btn" type="submit">Sign Up</button>
                     </form>
                 </div>
             </div>
@@ -36,4 +38,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default Register;
