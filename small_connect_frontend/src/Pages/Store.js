@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/js/footer'
+import Inventory from '../components/inventory'
 
 import './Store.css';
 
@@ -15,7 +16,15 @@ class Store extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="store">
-                    This is store
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory name="Toothpaste" price="60" />
                 </div>
                 <Footer />
             </React.Fragment>

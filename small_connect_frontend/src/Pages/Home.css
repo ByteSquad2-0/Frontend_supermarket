@@ -1,5 +1,5 @@
 .cards {
-    padding: 30px;
+    padding: 40px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;

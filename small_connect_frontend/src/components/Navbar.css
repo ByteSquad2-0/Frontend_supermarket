@@ -52,6 +52,11 @@ header {
     font-size: 14px;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(63, 159, 255);
+}
+
 .btn:focus {
     outline: solid 3px rgba(30, 143, 255, 0.384);
 }
