@@ -1,9 +1,11 @@
 .item {
     margin: 20px 0;
     padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    column-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 5px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px 0 gray;
