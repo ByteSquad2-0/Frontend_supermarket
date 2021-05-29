@@ -1,7 +1,7 @@
 .cards {
     padding: 40px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     justify-items: center;
     row-gap: 30px;
     column-gap: 30px;
