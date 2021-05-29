@@ -1,20 +1,30 @@
-import React from "react";
 import './card.css';
 
-const Cards = (props) => {
+function Rating(props) {
+ 
+   let arr = [1,2,3,4,5];
+    return (
+        <span className="rating" >
+            {arr.map((val) => (
+                val<=props.rating ? 
+                    <i className="fa fa-star star-fill" ></i> :
+                    <i className="fa fa-star star-blank" ></i>
+            ))}
+        </span>
+    );
+}
+
+function Card(props) {
   return (
-    <>
-      <div className="cards">
-        <div className="card">
-          <img src={props.imgsrc} alt="shop pic" className="shope_img" />
-          <div className="cardinfo">
-            <h3>{props.title}</h3>
-            <h6>{props.review}</h6>
-          </div>
-        </div>
-      </div>
-    </>
+      <span className="card">
+          <img src={props.url} alt={props.shopname}/>
+          <span className="data">
+              <span>{props.shopname}</span>
+              <Rating rating={props.rating} />
+              <button className="btn">Buy Now &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button>
+          </span>
+      </span>
   );
 }
 
-export default Cards;
+export default Card;
