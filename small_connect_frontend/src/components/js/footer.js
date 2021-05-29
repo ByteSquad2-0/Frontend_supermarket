@@ -17,7 +17,6 @@ return (
 			<Heading>About Us</Heading>
 			<FooterLink href="#">Aim</FooterLink>
 			<FooterLink href="#">Team</FooterLink>
-			<FooterLink href="#">Carrers</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Contact Us</Heading>
