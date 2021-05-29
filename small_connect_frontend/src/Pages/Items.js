@@ -17,7 +17,7 @@ class Store extends React.Component {
 
     componentDidMount() {
         const query = (new URL(window.location)).searchParams.get('shop');
-        const url = `http://localhost:3000/shopname/?shopname=${query.trim()}`;
+        const url = `http://localhost:5000/shopname/?shopname=${query.trim()}`;
 
         axios.get(url)
             .then((res) => {
