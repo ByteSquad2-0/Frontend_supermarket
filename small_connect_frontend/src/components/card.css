@@ -28,6 +28,9 @@
     display: flex;
     column-gap: 10px;
 }
+.link{
+    text-decoration: none;
+}
 
 .star-fill {
     color: rgb(255, 230, 0);
