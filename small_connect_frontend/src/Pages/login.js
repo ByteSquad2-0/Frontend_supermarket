@@ -19,7 +19,7 @@ class Login extends React.Component {
         return(
             <div className="main">
                 <div className="logo-box">
-                    <span className="login-logo">Small Connect</span>
+                   <a href = "/" className = "link"> <span className="login-logo">Small Connect</span> </a>
                 </div>
                 {this.state.err?<span className="error">Username or Password are invalid!</span>:""}
                 <div className="signin-box">

@@ -12,6 +12,10 @@
     align-items: center;
     background-color: rgba(148, 202, 255, 0.164);
 }
+.link{
+    text-decoration: none;
+    color: white;
+}
 
 .logo-box {
     padding: 20px 30px;
@@ -23,6 +27,9 @@
     font-weight: 700;
     text-align: center;
     border-radius: 20px 5px 20px 5px;
+}
+.logo-box:hover{
+    box-shadow: 2px 2px 5px 2px rgba(61, 61, 61, 0.281);
 }
 
 .signin-box {
