@@ -3,10 +3,10 @@ import './App.css';
 import {Route, Switch} from 'react-router-dom'
 import Login from './Pages/login';
 import Register from './Pages/register';
-import Cart from './components/js/Cart';
 import Home from './Pages/Home';
 import Store from './Pages/Store';
 import Items from './Pages/Items';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
