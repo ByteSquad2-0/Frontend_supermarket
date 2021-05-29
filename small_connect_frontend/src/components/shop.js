@@ -1,3 +1,4 @@
+
 import './inventory.css';
 
 function Shop(props) {
