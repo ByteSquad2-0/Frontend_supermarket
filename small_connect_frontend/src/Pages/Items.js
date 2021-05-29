@@ -16,15 +16,15 @@ class Store extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="store">
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
-                    <Inventory name="Toothpaste" price="60" />
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
+                    <Inventory/>
                 </div>
                 <Footer />
             </React.Fragment>
