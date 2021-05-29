@@ -52,8 +52,9 @@ header {
     font-size: 14px;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
+    background-color: rgb(63, 159, 255);
 }
 
 .btn:focus {

@@ -26,7 +26,7 @@ return (
 	</Container>
     <h5 style={{ color: "black",
     textAlign: "center",
-    marginTop: "5px" }}>Made with &#10084; by ByteSquad Team</h5>
+    marginTop: "5px" }}>Made with <i className="fa fa-heart" style={{color: "tomato"}}></i> by ByteSquad Team</h5>
 	</Box>
 );
 };
