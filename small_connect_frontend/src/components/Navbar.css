@@ -52,3 +52,7 @@ header {
     border-radius: 5px;
     font-size: 14px;
 }
+
+.btn:hover{
+    cursor: pointer;
+}
