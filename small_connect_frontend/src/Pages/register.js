@@ -32,7 +32,7 @@ class Register extends React.Component {
                         <input type="text" className="inp" placeholder="Username" ref={this.usernameRef} />
                         <input type="text" className="inp" placeholder="Name" ref={this.nameRef} />
                         <input type="email" className="inp" placeholder="Email" ref={this.emailRef} />
-                        <input type="number" className="inp" placeholder="Pincode" ref={this.pincodeRef} />
+                        <input type="number" maxLength={6} minLength={6} className="inp" placeholder="Pincode" ref={this.pincodeRef} />
                         <input type="password" className="inp" placeholder="Password" ref={this.passwordRef} />
                         <input type="password" className="inp" placeholder="Confirm Password" ref={this.cpasswordRef} />
                         <a className="forgot" href="/login">Already user? Signin here</a>

@@ -7,7 +7,8 @@ function Inventory(props) {
             <span className="item-name">{props.name}</span>
             <span className="item-price">Price: {props.price} Rupees</span>
         </span>
-        <button className="btn">Add to cart &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button>
+        <button className="btn">Add To Cart &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button>
+        <button className="btn">Buy Now &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button>
       </span>
   );
 }
