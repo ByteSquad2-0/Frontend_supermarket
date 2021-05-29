@@ -21,7 +21,7 @@ function Card(props) {
           <span className="data">
               <span>{props.shopname}</span>
               <Rating rating={props.rating} />
-              <a href = {"/store/?user="+props.shopname.trim()} className = "link"><button className="btn">Buy Now &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button></a>
+              <a href = {"/store/?user="+props.shopname.trim()} className = "link"><button className="btn">Find Shop &nbsp;&nbsp;<i className="fa fa-arrow-right"></i></button></a>
           </span>
       </span>
   );
