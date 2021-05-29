@@ -21,7 +21,7 @@ class Login extends React.Component {
                 <div className="logo-box">
                     <span className="login-logo">Small Connect</span>
                 </div>
-                {this.state.err?"":<span className="error">Username or Password are invalid!</span>}
+                {this.state.err?<span className="error">Username or Password are invalid!</span>:""}
                 <div className="signin-box">
                     <span className="signin-title">Login</span>
                     <form action="#" method="POST" onSubmit={(e) => this.handleSubmit(e)} >
@@ -31,6 +31,7 @@ class Login extends React.Component {
                         <button className="login-btn" type="submit">Login</button>
                     </form>
                 </div>
+                <a style={{marginTop: "10px"}} className="forgot" href="/register">Not User? signup here</a>
             </div>
         );
     }

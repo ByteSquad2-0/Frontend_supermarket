@@ -4,8 +4,6 @@ export const Box = styled.div`
 	padding: 20px 60px 20px 60px;
 	background: whitesmoke;
 	width: 100%;
-	margin-top: 40px;
-
 
 @media (max-width: 1000px) {
 	padding: 70px 30px;
