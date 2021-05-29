@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 	padding: 20px 60px 20px 60px;
-background: whitesmoke;
-width: 100%;
+	background: whitesmoke;
+	width: 100%;
+	margin-top: 40px;
 
 
 @media (max-width: 1000px) {
@@ -41,7 +42,7 @@ justify-content:center;
 
 export const FooterLink = styled.a`
 color: #000000;
-margin-bottom: 20px;
+margin-bottom: 15px;
 font-size: 18px;
 text-decoration: none;
 
@@ -54,6 +55,6 @@ text-decoration: none;
 export const Heading = styled.p`
 font-size: 24px;
 color: dodgerblue;
-margin-bottom: 40px;
+margin-bottom: 15px;
 font-weight: bold;
 `;

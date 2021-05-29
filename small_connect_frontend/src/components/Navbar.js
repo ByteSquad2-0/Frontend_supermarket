@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar() {
   return (
       <header>
-        <span className="logo">Connect</span>
+        <span className="logo">sConnect</span>
         <span className="right" >
           <input type="text" name="search" className="search-box"></input>
           <a href="/" className="cart">Cart</a>
