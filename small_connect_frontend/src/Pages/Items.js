@@ -16,15 +16,15 @@ class Store extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="store">
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
-                    <Inventory/>
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
+                    <Inventory name={"IceCream"} price={30} />
                 </div>
                 <Footer />
             </React.Fragment>
