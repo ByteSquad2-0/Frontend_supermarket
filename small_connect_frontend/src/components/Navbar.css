@@ -33,7 +33,7 @@ header {
     height: 35px;
     width: 200px;
     border: solid 2px rgba(128, 128, 128, 0.493);
-    border-radius: 17px;
+    border-radius: 5px;
     outline: none;
     font-size: 14px;
 }

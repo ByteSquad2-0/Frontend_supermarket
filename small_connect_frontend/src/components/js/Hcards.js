@@ -1,12 +1,11 @@
-import React from "react";
 import Cards from "./../card";
 
 const Hcards = (val) =>{
 return(
     <Cards 
-    imgsrc = {val.img}
-    title = {val.sname}
-    review = {val.ratings}
+    url = {val.img}
+    shopname = {val.sname}
+    rating = {val.ratings}
     />
     );
 }
