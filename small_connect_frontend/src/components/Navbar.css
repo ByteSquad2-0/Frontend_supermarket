@@ -1,12 +1,11 @@
 header {
     width: 100%;
-    margin-bottom: 40px;
     padding: 10px 40px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.466);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.192);
     position: sticky;
     top: 0;
 }
@@ -26,7 +25,7 @@ header {
 .cart {
     padding: 0 10px;
     font-weight: 800;
-    color:black;
+    color:gray;
     text-decoration: none;
 }
 
@@ -55,4 +54,8 @@ header {
 
 .btn:hover{
     cursor: pointer;
+}
+
+.btn:focus {
+    outline: solid 3px rgba(30, 143, 255, 0.384);
 }
