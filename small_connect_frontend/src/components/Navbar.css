@@ -29,13 +29,20 @@ header {
 }
 
 .search-box {
-    padding: 0px 10px;
-    height: 30px;
+    padding: 0px 20px;
+    height: 35px;
+    width: 200px;
     border: solid 2px rgba(128, 128, 128, 0.493);
-    border-radius: 15px;
+    border-radius: 17px;
+    outline: none;
+    font-size: 14px;
 }
 
-.btn {
+.search-box:focus {
+    border: solid 2px dodgerblue;
+}
+
+.btn {  
     padding: 10px 20px;
     color: white;
     background-color: dodgerblue;
