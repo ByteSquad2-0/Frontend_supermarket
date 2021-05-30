@@ -16,13 +16,10 @@ class Cart extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="cart">
-                    <CartItem name={"Kitkat"} price={20} />
-                    <CartItem name={"Kitkat"} price={20} />
-                    <CartItem name={"Kitkat"} price={20} />
-                    <CartItem name={"Kitkat"} price={20} />
-                    <CartItem name={"Kitkat"} price={20} />
-                    <CartItem name={"Kitkat"} price={20} />
+                    <CartItem name={"chair"} price={1001} />
+                    <CartItem name={"table"} price={10} />
                     <button className="final" >Buy All</button>
+                    <button className="final" >Negotiation</button>
                 </div>
                 <Footer />
             </React.Fragment>
