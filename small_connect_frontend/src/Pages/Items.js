@@ -32,7 +32,10 @@ class Store extends React.Component {
                 <Navbar />
                 <div className="store">
                     {this.state.itemlist.map((data, key) =>
-                        <Inventory key={key} name={data.name} price={data.price} />
+                        // eslint-disable-next-line array-callback-return
+                        data.items.map((d, k) => {
+                            <Inventory key={k} name={d.name} price={d.price} />
+                        })
                     )}
                 </div>
                 <Footer />
