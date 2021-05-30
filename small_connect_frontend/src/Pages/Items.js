@@ -11,7 +11,10 @@ class Store extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            itemlist: [],
+            itemlist: [{
+                items: [
+            ]
+            }],
         }
     }
 
@@ -23,6 +26,7 @@ class Store extends React.Component {
             .then((res) => {
                 console.log(res.data);
                 this.setState({itemlist: res.data});
+                console.log(this.state.itemlist[0].items);
             });
     }
 
@@ -31,12 +35,11 @@ class Store extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="store">
-                    {this.state.itemlist.map((data, key) =>
-                        // eslint-disable-next-line array-callback-return
-                        data.items.map((d, k) => {
-                            <Inventory key={k} name={d.name} price={d.price} />
-                        })
-                    )}
+                    {
+                    this.state.itemlist[0].items.map((data, key) =>
+                        <Inventory key={key} name={data.itemname} price={data.price} />
+                    )
+                    }
                 </div>
                 <Footer />
             </React.Fragment>
