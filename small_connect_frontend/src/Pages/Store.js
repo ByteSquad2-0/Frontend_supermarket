@@ -17,7 +17,7 @@ class Items extends React.Component {
     }
     componentDidMount() {
         const query = (new URL(window.location)).searchParams.get('catagory');
-        const url = `http://localhost:3000/catagory/?catagory=${query.trim()}`;
+        const url = `http://localhost:5000/catagory/?catagory=${query.trim()}`;
 
         axios.get(url)
             .then((res) => {
