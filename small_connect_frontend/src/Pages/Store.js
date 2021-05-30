@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/js/footer'
 
@@ -9,7 +10,20 @@ class Items extends React.Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props);
-        console.log((new URL(window.location)).searchParams.get('user'));
+        this.state = {
+            shoplist: [],
+        }
+        
+    }
+    componentDidMount() {
+        const query = (new URL(window.location)).searchParams.get('catagory');
+        const url = `http://localhost:3000/catagory/?catagory=${query.trim()}`;
+
+        axios.get(url)
+            .then((res) => {
+                console.log(res.data);
+                this.setState({shoplist: res.data});
+            });
     }
 
     render() {
@@ -17,12 +31,9 @@ class Items extends React.Component {
             <React.Fragment>
                 <Navbar />
                 <div className="items">
-                    <Shop name={"Op shop1"} address={"Daiict, Gnadhinagar"} />
-                    <Shop name={"Op shop2"} address={"Daiict, Gnadhinagar"} />
-                    <Shop name={"Op shop3"} address={"Daiict, Gnadhinagar"} />
-                    <Shop name={"Op shop4"} address={"Daiict, Gnadhinagar"} />
-                    <Shop name={"Op shop5"} address={"Daiict, Gnadhinagar"} />
-                    <Shop name={"Op shop6"} address={"Daiict, Gnadhinagar"} />
+                    {this.state.shoplist.map((data, key) => 
+                        <Shop key={key} name={data.name} address={data.pincode} />
+                    )}
                 </div>
                 <Footer />
             </React.Fragment>
