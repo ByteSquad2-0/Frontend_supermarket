@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from'axios';
 import Navbar from '../components/Navbar';
-import Footer from '../components/js/footer'
+import Footer from '../components/Footer'
 
 import './Store.css';
 import Shop from '../components/shop';
